@@ -1,10 +1,10 @@
 ---
-- hosts: localhost
+- hosts: webservers
   become: yes
   connection: local
   roles:
     - common
-    - nginx
-#    - serverspec
-#    - serverspec_sample
+#    - nginx
+    - serverspec
+    - serverspec_sample
 #    - jenkins
